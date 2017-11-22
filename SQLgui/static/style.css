@@ -1,0 +1,327 @@
+QMainWindow{
+    background-color: #2495ed;
+
+}
+
+
+/* QMainWindow MenuBar */
+QMenuBar {
+    background-color: #2495ed;
+    padding:10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QMenuBar QLabel{
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-color: #2495ed;
+}
+
+QMenuBar::item {
+    background-color: #2495ed;
+    margin-left: 5px;
+    padding: 10px 8px;
+    padding-top: 10px;
+    border-radius: 15px;
+
+    color: #fff;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #2495ed, stop: 0.4 #2495ed,
+                                 stop: 0.5 #2495ed, stop: 1.0 lightblue);
+    border-radius: 6px;
+    border-bottom-color: blue;
+    color: #fff;
+}
+
+QMenuBar::item:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                         stop: 0 lightblue, stop: 0.4 #2495ed,
+                         stop: 0.5 #2495ed, stop: 1.0 lightblue);
+    padding-left: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-color: blue;
+    color: white;
+
+}
+
+/* end QMainWindow MenuBar */
+
+
+/* QMenu */
+
+QMenu{
+        background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #2495ed, stop: 0.4 #2495ed,
+                                 stop: 0.5 #2495ed, stop: 1.0 lightskyblue);
+    color: white;
+    margin: 3px; 
+    font-size: 14px;
+    
+}
+
+QMenu::item {
+    padding: 5px 25px 5px 20px;
+
+}
+
+QMenu::item:selected {
+    color:#fff;
+ /*   background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #2495ed, stop: 0.4 #2495ed,
+                                 stop: 0.5 #2495ed, stop: 1.0 lightskyblue);*/
+    font-weight: bold;
+}
+
+/* end QMenu*/
+
+QTextEdit{
+    background-color: white;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #2495ed;
+}
+
+
+
+/* Edit SQL */
+QPlainTextEdit{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: lightblue;
+    border-top-color: #2495ed;
+    font-family: 'Century';
+    font-size: 15px;
+    padding: 6px;
+}
+
+QPlainTextEdit:hover{
+    border-color: #333;
+    border-top-color: #2495ed;
+     
+}
+
+/* end Edit SQL */
+
+
+
+/* Window SQL-Console */
+QDockWidget{
+    color:white;
+
+
+}
+QDockWidget::title {
+    text-align: left;
+    background-color: qlineargradient(x1: 0.0, y1: 0.0, x2: 0.6, y2: 0.0,
+                                stop: .0 lightskyblue, stop: 0.4 #2495ed);
+    padding-left: 25px;
+    
+
+}
+
+QDockWidget::title:hover {
+    text-align: left;
+    background-color: qlineargradient(x1: 0.0, y1: 0.0, x2: 0.6, y2: 0.0,
+                                stop: .4 #66CCCC, stop: 0.0 #2495ed);
+    padding-left: 25px;
+    color:white;
+
+}
+QDockWidget::close-button, QDockWidget::float-button {
+  max-height:0px;
+}
+
+/* end Window SQL-Console */
+
+
+/*QTable */
+QTableView{
+    /*background-color: #eee;*/
+    
+}
+QTableView QWidget{
+    background-color: #f5f5f5;
+}
+QTableView QLineEidt{
+    background-color: white;
+}
+
+QTableView::item{
+    color:black;
+    
+    selection-background-color: qlineargradient(x1: 0.2, y1: 0.0, x2: 0.5, y2: 0.5,
+                                stop: 1 #fff, stop: 0 lightblue);
+    
+    selection-color:black;
+}
+QTableView QTableCornerButton::section {
+    background: white;
+    border: 1px outset lightblue;
+}
+
+
+
+QTableView {font-size:15px;}
+
+/* end QTable */
+
+/*QTabWidget*/
+
+
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 3px solid white;
+}
+
+
+QTabBar::tab{
+    background-color: #4682b4;
+
+    color:#eee;
+    margin-left: 2px;
+    padding: 2px;
+    padding-left: 10PX;
+    padding-right: 10PX;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+
+QTabBar::tab:hover{
+    background-color: #eee;
+    color:black;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #2495ed;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+QTabBar::tab::selected{
+    background-color: white;
+    color:black;
+    border-style: inset;
+    border-width: 1px;
+    border-color: white;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+
+}
+
+QTabWidget::tab-bar{
+    left: 1px; /* move to the right by 5px */
+    
+}
+QTabWidget::tab-widget{
+    background-color: red;
+}
+
+QTabWidget{ 
+    font-family: 'Century';
+    font-size:13px;
+
+}
+
+/* end QTabWidget */
+
+
+/* QDialog Connect */
+
+QDialog{
+    background-color: #6495ed;
+    padding: 8px;
+
+}
+
+QDialog QPushButton{
+    background-color:#6495ed;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: Lightblue;
+    padding: 2px;
+    color:white;
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 12px;
+    
+}
+QDialog QPushButton::pressed{
+    border-style: inset;
+}
+
+QDialog QPushButton::hover{
+    background-color:#2495ed;
+}
+
+QDialog QLineEdit {
+    height:25px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 4px;
+    background: white;
+    selection-color: black;
+    selection-background-color: Lightblue;
+    color:#6495ed;
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 12px;
+}
+QDialog QLineEdit::hover{
+    border: 3px solid #2495ed;
+    color:blue;
+
+}
+
+QDialog QCheckBox{
+    color:lightblue;
+    font-family: 'Chaparral Pro';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 4px;
+}
+QDialog QCheckBox::checked{
+    color:white;
+}
+QDialog QCheckBox::hover{
+    color:white;
+}
+
+/* end QDialog  Connect */
+
+
+
+
+QHeaderView::section {
+     font-weight: bold;
+     background-color: none;
+}
+
+QHeaderView::section:selected
+{
+    background-color: none;
+    font-weight: bold;
+}
+
+QHeaderView::section:checked
+{
+    background-color: none;
+    font-weight: bold;
+}
