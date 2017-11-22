@@ -1,5 +1,5 @@
 # SQLgui
 
 
-![](https://imgur.com/f7mZrwz)
+![](https://i.imgur.com/f7mZrwz.png)
 
