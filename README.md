@@ -14,5 +14,5 @@ install [mysql-connector](https://dev.mysql.com/downloads/connector/python/)
 
 
 >
-__I think the color format is not beautiful__ 
+__I think the color format is not beautiful__ <br>
 __You can modify the design of a file "SQLgui/static/style.css"__
