@@ -1,5 +1,4 @@
 # SQLgui
-## python 3
 
 #### The program deals with the mysql like the shell but with a graphical interface as shown in the picture
 
@@ -13,3 +12,4 @@
 
 install [mysql-connector](https://dev.mysql.com/downloads/connector/python/)
 
+### python 3 
